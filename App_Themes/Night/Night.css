@@ -13,7 +13,6 @@ a
     text-decoration:none;
 }
 #TrangDau{
-
 }
 /*Header*/
 header {
@@ -26,33 +25,48 @@ header {
   font-size:24px;
   font-weight:bold;
   display:none;
-  border-bottom:2px solid white;
-
+  border-bottom:5px solid #47b1aa;  
+  width:96%;
+  height:290px;
+  overflow-x: hidden;
 }
 #NightMenu span{
   display:none;
-
 }
 #TreeView1n0Nodes{
+  border-top:3px solid #47b1aa;
+  border-left:3px solid #47b1aa;
+  border-radius:0px 50px 0px 50px;
   background:rgb(0, 0, 0);
-  width:13%;
-  height:auto;
   padding:1%;
+  padding-bottom:2%;
   float:left;
-  border-top:0.1px solid white;
-  border-left:0.1px solid white;
+  width:17%;
+  height:auto;
+}
+#TreeView1n0Nodes table{
+  color:black;
+  padding:5%;
+  width:20%;
+  margin-top:6px;
 }
 #TreeView1n0Nodes a{
-  color:white;
-  padding:1%;
+  margin-top:20px;
+  border-left: 5px solid #47b1aa;
+  border-radius:50px 50px 50px 0px ;
+  color:#fbfbfb;
+  padding:2%;
+  padding-right:10%;
+  transition: 0.4s;
+/*   border-bottom:3px solid #47b1aa; */
 }
 #NightMenu  a:hover
 {
   background-color: rgb(255, 255, 255);
-  border-left: 5px solid #47b1aa;
-  border-radius:0% 5% 5% 0%;
-  color:black;
-  padding-right:2%;
+  color:#000000;
+  padding:2%;
+  padding-right:30%;
+  background:#ffffff;
 }
 .logotreeview
 {
@@ -60,8 +74,8 @@ header {
   display:inline-block;
 }
 .logotreeview img{
-  margin:-2% 0% 0% 100%;
-  width:45%;
+  margin:1% 0% 0% 90%;
+  width:65%;
   height:auto;
 }
 /*ghitrang*/
@@ -138,8 +152,8 @@ section#NoiDung {
     text-align:center;
 }
     /*Themee*/
-.sidebar {
-  height: auto;
+#GiaoDien {
+  height: 0px;
   width: 18%;
   position: fixed;
   z-index: 1;
@@ -147,13 +161,14 @@ section#NoiDung {
   right:1%;
   background-color: rgba(89, 221, 212,0.4);
   overflow-x: hidden;
-  transition: 1.5s;
+  transition:0.3s;
   text-align:center;
-  display: none;
+  display: block;
   overflow: hidden;
-  border:1px white solid;
-  padding-top:1%;
-
+}
+.sidebar
+{
+    padding-top:5%;
 }
 .icon {
   background:rgba(55, 212, 212,0.4);
@@ -161,7 +176,7 @@ section#NoiDung {
   margin:1% 0% 1% 1%;
   position: fixed;
   right:1%;
-  bottom:0%;
+  bottom:0%;;
   text-decoration: none;
   border:2px white solid;
   padding:1%;

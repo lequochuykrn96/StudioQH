@@ -160,8 +160,8 @@ section#NoiDung {
     text-align:center;
 }
     /*Themee*/
-.sidebar {
-  height: auto;
+#GiaoDien {
+  height: 0px;
   width: 18%;
   position: fixed;
   z-index: 1;
@@ -169,13 +169,14 @@ section#NoiDung {
   right:1%;
   background-color: rgba(89, 221, 212,0.4);
   overflow-x: hidden;
-  transition: 1.5s;
+  transition:0.3s;
   text-align:center;
-  display: none;
+  display: block;
   overflow: hidden;
-  border:1px white solid;
-  padding-top:1%;
-
+}
+.sidebar
+{
+    padding-top:5%;
 }
 .icon {
   background:rgba(55, 212, 212,0.4);

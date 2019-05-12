@@ -1,10 +1,10 @@
 ﻿//Hiển Thị Theme
 function anchon() {
-    var x = document.getElementById("DropDownList");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    var x = document.getElementById("GiaoDien");
+    if (x.style.height === "300px") {
+        x.style.height = "0px";;
     } else {
-        x.style.display = "block";
+        x.style.height = "300px";
     }
 }
 //Đăng Nhập
