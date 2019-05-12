@@ -1,0 +1,6 @@
+﻿				Xin chào <br/>
+Đây là tài khoản của bạn:<br/>
+Tên:##Name## <br/>
+Email:##Email## <br/>
+Số điện thoại cá nhân:##HomePhone## <br/>
+Mật khẩu: ##MatKhau## <br/>

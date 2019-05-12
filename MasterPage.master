@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage2" %>
+
+<%@ Register Src="~/Controls/DangNhap.ascx" TagPrefix="lequochuy" TagName="DangNhap" %>
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head runat="server">
+    <title></title>  
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="JS/modernizr-2.6.2.js"></script>
+    <script src="JS/MasterPage.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="TrangDau"> 
+        <header>
+            <h1><a href="TrangChu.aspx"><img src="Images/Untitled-1.png" /></a></h1>
+        </header>
+            <asp:Menu ID="Menu" runat="server" DataSourceID="SiteMapDataSource" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False"></asp:Menu> 
+            <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" ShowStartingNode="False" /> 
+                <div class="MyBar" onclick="MBar(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <%-- Treeview --%>
+        <nav id="NightMenu">
+            <asp:TreeView ID="TreeView1" runat="server" ShowExpandCollapse="False" DataSourceID="SiteMapDataSource1">
+                <LevelStyles>
+                    <asp:TreeNodeStyle CssClass="ClassTreeView" />
+                </LevelStyles>
+            </asp:TreeView>
+            <div class="logotreeview"><img src="Images/Untitled-1.png" /></div>   
+        </nav>
+        </div>
+            <asp:SiteMapPath ID="ghitrang" runat="server"></asp:SiteMapPath><br/> <br/>
+        <section id="NoiDung">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        </section>   
+        <%-- Theme --%>
+        <div id="GiaoDien">
+        <aside id="DropDownList" class="sidebar">Chọn Giao Diện<br/>
+        <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
+            <asp:ListItem>Morning</asp:ListItem>
+            <asp:ListItem>Night</asp:ListItem>
+        </asp:DropDownList>
+            <aside id="TaiKhoan">
+          <div>
+            <h3>ĐĂNG NHẬP</h3>
+              <div runat="server" id="DangNhap">
+                  <asp:Label ID="LBDN" runat="server" Text="Tài Khoản"></asp:Label>
+                  <asp:TextBox ID="TBDN" runat="server"></asp:TextBox>
+                  <asp:Label ID="LBMK" runat="server" Text="Mật Khẩu"></asp:Label>
+                  <asp:TextBox ID="TBMK" runat="server" TextMode="Password"></asp:TextBox>
+                  <asp:Button ID="bntDN" runat="server" OnClick="bntDN_Click" Text="Đăng Nhập" OnClientClick="return confirm" CssClass="bntDangNhap" />
+                  <Button class="bntDangKy"><a href="DangKy.aspx">Đăng Ký</a></Button>
+              </div>
+              <asp:Label ID="XuatHien" runat="server" Visible="False" Text="XuatHien" Font-Overline="False"></asp:Label> 
+          </div>
+        </aside>       
+    </aside>
+            <div>
+            <a href="javascript:void(0);" class="icon" onclick="anchon()" aria-hidden="False">Đăng Nhập</a>
+                </div>
+            </div>   
+        <footer>
+            <div id="Ffooter">
+            <div class="F1">
+                <h1>Giới Thiệu</h1>
+                <p>Chúng tôi làm việc với niềm đam mê và chữ ‘tâm’ đặt trên tất cả. Tất cả mọi thành viên của Quốc Huy Studio đều làm việc với tinh thần đoàn kết, sự trung thực, và trách nhiệm cao nhất với công việc và nhiệm vụ của mình.</p>
+            </div>
+            <div class="F2">
+                <h1>QH-Studio</h1>
+                <p>Hotline Studio: 0979797997
+                    Hotline Tư Vấn & CSKH:
+                    0966996596 (Mr.Quốc Huy)
+                    Email:QuocHuyStudio@gmail.com</p>
+                 </div>
+                </div>
+            <div id="map">
+            <iframe class="bando" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.12853777125!2d109.19589368604042!3d12.239574985582598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31706700bc6d6995%3A0x7d4cd9c4fe1c7a8b!2zUXXhuqNuZyB0csaw4budbmcgMiB0aMOhbmcgNA!5e0!3m2!1svi!2s!4v1557411618390!5m2!1svi!2s" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+       </footer>
+    
+    </form>
+</body>
+</html>
