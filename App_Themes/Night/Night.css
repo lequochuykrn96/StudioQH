@@ -74,7 +74,7 @@ header {
     padding-right:2%;
     background-color: rgba(255, 255, 255,0.4);
     border-left: 5px solid #47b1aa;
-    border-radius:0% 5% 5% 0%;
+    border-radius:0px 50px 50px 0px;
     display:inline-block;
 }
 
@@ -350,40 +350,44 @@ section#NoiDung {
 }
 /*KHACHHANG*/
 #KhachHang h1{
-  color:#551a8b;
+  color:#000000;
   text-align: left;
-  margin:2% 0% 0% 1%;
+  margin:1% 0% 0% 2%;
+  border:2px solid white;
+  padding:1%;
+  width:10%;
+  border-radius: 0px 50px 50px 2px;
+  background:#37d4d4;
 }
 .TrinhBay{
-  margin: 2% 0% 2% 1%;
+  margin: 2% 2% 2% 2%;
   border: solid #fff 2px;
-  width:98%;
+  width:96%;
   background:rgb(55, 212, 212);
   text-align:left;
 }
 .TrinhBay ul{
-  margin:0% 0% 0% 0%;
-  padding-right:1%;
-}
-.TrinhBay li{
-  margin: 2% 0% 2% 0%;
-  height:auto;
-  width:100%;
-
-}
-.TrinhBay h3{
+  list-style:none;
   font-size:20px;
-  margin:0% 0% 0% 0%;
-  
+  padding:1%;
+  width:90%;
+  margin:1% 5% 1% 5%;
+  background:#37d4d4;
+  border:solid 1px white;
+  border-radius: 50px 50px 50px 50px;
 }
 .TrinhBay p{
-  font-size:24px;
-  margin:1% 0% 1% 0%;
-/*   text-align:left;  */
-
+  text-indent:20px;
 }
+
 .TrinhBay span{
   text-align:center;
+  border:solid 1px white;
+  margin-left:18%;
+  background:#f7f7f778;
+  border-radius: 50px 50px 50px 50px;
+  font-weight:bold;
+  padding:5px;
 }
 /*TrangChu*/
 .QuangCao{
@@ -475,6 +479,9 @@ section#NoiDung {
 .DKy{
   text-align:center;
 }
+.DKy h1{
+  color:white;
+}
 .ErrorMessage { color: Red; }
 .auto-style1{
 
@@ -519,6 +526,7 @@ section#NoiDung {
   background-color: white;
   margin: 6px 0;
   transition: 0.4s;
+  
 }
 
 .change .bar1 {
