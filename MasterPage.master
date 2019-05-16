@@ -13,6 +13,7 @@
     <script src="JS/modernizr-2.6.2.js"></script>
     <script src="JS/MasterPage.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link REL="SHORTCUT ICON"  HREF="Images/logoweb3.png"/>
 </head>
 <body>
     <form id="form1" runat="server">
