@@ -165,7 +165,7 @@ section#NoiDung {
   width: 18%;
   position: fixed;
   z-index: 1;
-  top:40%;
+  top:57%;
   right:1%;
   background-color: rgba(89, 221, 212,0.4);
   overflow-x: hidden;
@@ -173,6 +173,12 @@ section#NoiDung {
   text-align:center;
   display: block;
   overflow: hidden;
+}
+.Tkdangxuat{
+  padding:2%;
+  color:white;
+  background:#26b4d0;
+  font-weight:bold;
 }
 .sidebar
 {
@@ -192,32 +198,19 @@ section#NoiDung {
   color:#ffffff;
   border-radius:100%;
 }
-/*TaiKhoan*/
 #TaiKhoan
 {
     border:solid white;
-    margin:5% 5% 10% 5%;
+    margin:5% 5% 3% 5%;
     padding:8%;
     background:rgba(89, 221, 212,0.8);
+    width:70%;
+    height:50px;
 }
-    #TaiKhoan input
-    {
-        width:90%;
-        margin-bottom:2%;
-    }
-    #TaiKhoan a{
-      text-decoration: none;
-    }
-    #bntDK.bntDangKy{
-      width:40%;
-      margin-top:5%;
-      padding:1%;
-    }
-    #bntDN.bntDangNhap{
-      width:50%;
-      margin-top:5%;
-      padding:1%;
-    }
+#TaiKhoan a{
+  font-weight:bold;
+  
+}
 /*GioiThieu*/
 .GT1 {
     float:left;
@@ -519,13 +512,13 @@ section#NoiDung {
 .auto-style1{
 
   border:solid white;
-  background:#59ddd4;
+  background:#59ddd4b5;
   text-align:left;
   width:45%;
   height:auto;
   font-size:20px;
   padding:2%;
-  margin:0% 0% 0% 30%;
+  display:inline-block;
 }
 .auto-style3
     {
@@ -541,8 +534,104 @@ section#NoiDung {
 .CLbntDK
 {
     color:white;
-    background:rgba(0, 214, 224, 0.6);
+    background:rgb(0, 214, 224);
     padding:2%;
     font-weight:bolder;
     margin:5% 0% 0% 20%;
+}
+/*DangNhap*/
+#Login {
+  text-align:center;  
+  background: url(/StudioQH/Images/nenlogin.jpg) no-repeat;
+  background-size: cover;
+}
+.Login_logo{
+  width:300px;
+  height:300px;
+  background:rgb(8, 142, 148);
+  display:inline-block;
+  border-radius:100%;
+  border:3px white solid;
+  margin:2% 0% 0% 0%;
+}
+#Login1 {
+    background:#59ddd4b5;
+    width:60%;
+    height:auto;
+    margin:-10% 0% 2% 20%;
+    padding:1%;
+    color:white;
+    border:3px solid white;    
+}
+.GomLG{
+  margin-top:17%;
+  width:100%;
+  height:auto;
+  display:flex;
+}
+.FmDangnhap{
+  width:60%;
+  height:300px;
+  border:1px solid white;
+  background:#00000036;
+}
+.FmDangnhap h3{
+  padding:1%;
+  background:#488cdc;
+  width:50%;
+  display:inline-block;
+  border-radius:50px;
+}
+.bntDangNhap{
+  background:#332e5db0;
+  font-weight:bold;
+  color:white;
+  padding:2%;
+}
+
+#Login2{
+  width:250px; 
+  height:200px;
+  border:1px solid white;
+  margin:1% 1% 1% 5%;
+}
+#Login2 .dn1{
+  color:white;
+  margin-top:20px;
+}
+#Login2 .dn2{
+  color:white;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.Login3{
+  background:#00000036;
+  width:100%;
+  height:284px;
+  margin:0% 1% 1% 2%;
+  padding:1%;
+  border:1px solid white;
+}
+.Fmdangky{
+  background:#00000029;
+  width:100%;
+  height:230px;
+  margin:0% 0% 2% 0%;
+  border:1px white solid;
+}
+.Fmdangky1{
+  color:white;
+  width:100%;
+  font-weight:bold;
+  height:40px;
+  text-align:center;
+  background:#332e5d;
+  border:1px solid white;
+}
+.Fmdangky1 a{
+  line-height:40px;
+  color:white;
+}
+#Login4 {
+    display:none;
 }

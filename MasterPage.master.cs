@@ -4,9 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using System.Data.SqlClient;
 public partial class MasterPage2 : System.Web.UI.MasterPage
 {
+    SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\DataDangKy.mdf;Integrated Security=True");
     protected void Page_Load(object sender, EventArgs e)
     {
         //Theme
@@ -39,8 +40,14 @@ public partial class MasterPage2 : System.Web.UI.MasterPage
                 TreeView1.Visible = false;
                 break;
         }
+        if (Session["Ten"] != null)
+        {
+            Label1.Text = Session["Ten"].ToString();
+        }
+        else {
+            Response.Redirect("~/Login/Login.aspx");
+        }
     }
-    
     protected void ThemeList_SelectedIndexChanged(object sender, EventArgs e)
     {
         HttpCookie preferredTheme = new HttpCookie("PreferredTheme");
@@ -49,26 +56,9 @@ public partial class MasterPage2 : System.Web.UI.MasterPage
         Response.Cookies.Add(preferredTheme);
         Response.Redirect(Request.Url.ToString());
     }
-    protected void bntDN_Click(object sender, EventArgs e)
+    protected void bntdangxuat_Click(object sender, EventArgs e)
     {
-        if (TBDN.Text.Trim().Length == 0)
-        {
-            return;
-        }
-        if (TBMK.Text.Trim().Length == 0)
-        {
-            return;
-        }
-        else
-        {
-            XuatHien.Text = TBDN.Text + "<br/>Chào mừng bạn đến với StudioQH ";
-            DangNhap.Visible = false;
-            XuatHien.Visible = true;
-        }
+        Session.RemoveAll();
+        Response.Redirect("~/Login/Login.aspx");
     }
-    protected void bntDK_Click(object sender, EventArgs e)
-    { 
-
-    }
-
 }
