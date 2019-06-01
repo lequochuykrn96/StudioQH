@@ -157,7 +157,7 @@ section#NoiDung {
   width: 18%;
   position: fixed;
   z-index: 1;
-  top:40%;
+  top:50%;
   right:1%;
   background-color: rgba(89, 221, 212,0.4);
   overflow-x: hidden;
@@ -491,7 +491,7 @@ section#NoiDung {
 
 }
 /*Đăng Ký*/
-.DKy{
+/*.DKy{
   text-align:center;
 }
 .DKy h1{
@@ -527,7 +527,7 @@ section#NoiDung {
     padding:2%;
     font-weight:bolder;
     margin:5% 0% 0% 20%;
-}
+}*/
 /*My Bar*/
 .MyBar {
   display: inline-block;
