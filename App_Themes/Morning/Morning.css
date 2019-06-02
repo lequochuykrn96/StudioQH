@@ -672,9 +672,20 @@ section#NoiDung {
 #Pglienhe3{
   float:left;
   width:70%;
-  height:200px;
+  height:auto;
   margin:0% 0% 0% 4%;
   padding:1%;
   border:1px solid white;
   text-align:center;
+}
+#maplienhe {
+  width:880px;
+  height:500px;
+  border:1px solid white;
+  display:inline-block;
+}
+.bandolienhe{
+  height:500px;
+  width:880px;
+  
 }
