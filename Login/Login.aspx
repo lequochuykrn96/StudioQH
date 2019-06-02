@@ -32,11 +32,11 @@
               <div runat="server" id="Login2">
                   <div class="dn1">
                   <i class='fas fa-user'></i> <asp:Label ID="LBDN" runat="server" Text="Tài Khoản" ></asp:Label> </br>
-                  <asp:TextBox ID="TBDN" runat="server"></asp:TextBox>
+                  <asp:TextBox ID="TBDN" runat="server" CssClass="TextBoxLogin" placeholder="Nhập tài khoản..."></asp:TextBox>
                   </div>
                   <div class="dn2">
                   <i class='fas fa-key'></i> <asp:Label ID="LBMK" runat="server" Text="Mật Khẩu"></asp:Label> </br>
-                  <asp:TextBox ID="TBMK" runat="server" TextMode="Password"></asp:TextBox> 
+                  <asp:TextBox ID="TBMK" runat="server" CssClass="TextBoxLogin" placeholder="Nhập mật khẩu..." TextMode="Password" ></asp:TextBox> 
                    </div>       
                   <asp:Button ID="bntdangnhap" runat="server" Text="Đăng Nhập" OnClientClick="return confirm" CssClass="bntDangNhap" OnClick="bntdangnhap_Click" />
                   
