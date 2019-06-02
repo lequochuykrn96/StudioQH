@@ -19,12 +19,15 @@
 </head>
 <body id="Login">
     <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptNabager" runat="server"></asp:ScriptManager>
     <div class="Login_logo">
         <img src="../Images/Untitled-1.png" style="width:300px; height:300px"/>
     </div>
         <aside id="Login1">
             <div class="GomLG">
           <div class="FmDangnhap">
+              <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                  <ContentTemplate>
             <h3>ĐĂNG NHẬP</h3>
               <div runat="server" id="Login2">
                   <div class="dn1">
@@ -38,6 +41,15 @@
                   <asp:Button ID="bntdangnhap" runat="server" Text="Đăng Nhập" OnClientClick="return confirm" CssClass="bntDangNhap" OnClick="bntdangnhap_Click" />
                   
                   </div>
+                      </ContentTemplate>
+           </asp:UpdatePanel> 
+              <asp:UpdateProgress ID="loaddulieu" runat="server" AssociatedUpdatePanelID="UpdatePanel1">
+                    <ProgressTemplate>
+                    <div id="loadinglogin" runat="server">
+                        <img src="../Images/loading/full.gif" />
+                    </div>
+                        </ProgressTemplate>
+                </asp:UpdateProgress>         
           </div>
             <div class="Login3">
                 <div class="Fmdangky">

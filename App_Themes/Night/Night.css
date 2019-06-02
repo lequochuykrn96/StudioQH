@@ -133,14 +133,13 @@ footer {
 } 
 
 section#NoiDung {
-
     width:94%;
     height:auto;
     float:left;
-    background:#000101;
+    background:#2fb9d4;
     padding:1%;
     margin:0% 2% 0% 2%;
-    box-shadow:0px 0px 10px 2px  #000000; 
+    box-shadow:0px 0px 10px 2px  #26a7bb; 
 }
 /* #DropDownList{
     width:13%;
@@ -157,7 +156,7 @@ section#NoiDung {
   width: 18%;
   position: fixed;
   z-index: 1;
-  top:50%;
+  top:57%;
   right:1%;
   background-color: rgba(89, 221, 212,0.4);
   overflow-x: hidden;
@@ -165,6 +164,12 @@ section#NoiDung {
   text-align:center;
   display: block;
   overflow: hidden;
+}
+.Tkdangxuat{
+  padding:2%;
+  color:white;
+  background:#26b4d0;
+  font-weight:bold;
 }
 .sidebar
 {
@@ -184,32 +189,19 @@ section#NoiDung {
   color:#ffffff;
   border-radius:100%;
 }
-/*TaiKhoan*/
 #TaiKhoan
 {
     border:solid white;
-    margin:5% 5% 10% 5%;
+    margin:5% 5% 3% 5%;
     padding:8%;
     background:rgba(89, 221, 212,0.8);
+    width:70%;
+    height:50px;
 }
-    #TaiKhoan input
-    {
-        width:90%;
-        margin-bottom:2%;
-    }
-    #TaiKhoan a{
-      text-decoration: none;
-    }
-    #bntDK.bntDangKy{
-      width:40%;
-      margin-top:5%;
-      padding:1%;
-    }
-    #bntDN.bntDangNhap{
-      width:50%;
-      margin-top:5%;
-      padding:1%;
-    }
+#TaiKhoan a{
+  font-weight:bold;
+  
+}
 /*GioiThieu*/
 .GT1 {
     float:left;
