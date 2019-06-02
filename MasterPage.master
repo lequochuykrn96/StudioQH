@@ -17,6 +17,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptNabager" runat="server"></asp:ScriptManager>
     <div id="TrangDau"> 
         <header>
             <h1><a href="TrangChu.aspx"><img src="Images/Untitled-1.png" /></a></h1>
@@ -39,6 +40,29 @@
         </nav>
         </div>
             <asp:SiteMapPath ID="ghitrang" runat="server"></asp:SiteMapPath><br/> <br/>
+        <%-- Slide --%>
+        <div id="loadingslide">
+           <div class="slidehinh">
+          <div class="slidehinh1 fade"><a href="HinhAnh.aspx">
+            <img src="Images/Yen/yen2.jpg" style="width:100%"/>
+            <div class="slidehinh2">Studio-QH Xin Chào</div></a>
+          </div>
+          <div class="slidehinh1 fade"><a href="HinhAnh.aspx">
+            <img src="Images/DSC02752-14.jpg" style="width:100%"/>
+            <div class="slidehinh2">Nơi lưu giữ những kỹ niệm đẹp</div></a>
+          </div>
+          <div class="slidehinh1 fade"><a href="HinhAnh.aspx">
+            <img src="Images/nvbhnvgb.jpg" style="width:100%"/>
+            <div class="slidehinh2">Phong cách làm việc chuyên ngiệp</div></a>
+          </div>
+        </div> 
+        <div style="text-align:center">
+          <span class="cham" onclick="chamSlide(0)"></span> 
+          <span class="cham" onclick="chamSlide(1)"></span> 
+          <span class="cham" onclick="chamSlide(2)"></span> 
+        </div>
+        </div>
+        <%-- NoiDung --%>
         <section id="NoiDung">
             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
@@ -79,7 +103,32 @@
             <iframe class="bando" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.12853777125!2d109.19589368604042!3d12.239574985582598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31706700bc6d6995%3A0x7d4cd9c4fe1c7a8b!2zUXXhuqNuZyB0csaw4budbmcgMiB0aMOhbmcgNA!5e0!3m2!1svi!2s!4v1557411618390!5m2!1svi!2s" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
        </footer>
-    
     </form>
+    <script>
+        var chayhinh;
+        function showhinh() {
+            var j;
+            var filehinh = document.getElementsByClassName("slidehinh1");
+            var chamhinh = document.getElementsByClassName("cham");
+            for (j = 0; j < filehinh.length; j++) {
+                filehinh[j].style.display = "none";
+            }
+            for (j = 0; j < chamhinh.length; j++) {
+                chamhinh[j].className = chamhinh[j].className.replace(" activehinh", "");
+            }
+
+            filehinh[chayhinh].style.display = "block";
+            chamhinh[chayhinh].className += " activehinh";
+            chayhinh++;
+            if (chayhinh > filehinh.length - 1) {
+                chayhinh = 0
+            }
+            setTimeout(showhinh, 10000);
+        }
+        showhinh(chayhinh = 0);
+        function chamSlide(n) {
+            showhinh(chayhinh = n);
+        }
+    </script>
 </body>
 </html>
