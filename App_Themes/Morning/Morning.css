@@ -577,13 +577,14 @@ section#NoiDung {
 }
 .FmDangnhap h3{
   padding:1%;
-  background:#488cdc;
+  background: #088e94;
   width:50%;
   display:inline-block;
   border-radius:50px;
+  border:1px solid white;
 }
 .bntDangNhap{
-  background:#332e5db0;
+  background: #088e94;
   font-weight:bold;
   color:white;
   padding:2%;
@@ -603,6 +604,13 @@ section#NoiDung {
   color:white;
   margin-top:20px;
   margin-bottom:20px;
+}
+#Login2 .TextBoxLogin{
+  background:#7dd7da;
+  border:2px solid white;
+  border-radius:20px;
+  padding:7px;
+  color:white;
 }
 .Login3{
   background:#00000036;
@@ -625,7 +633,7 @@ section#NoiDung {
   font-weight:bold;
   height:40px;
   text-align:center;
-  background:#332e5d;
+  background:#088e94;
   border:1px solid white;
 }
 .Fmdangky1 a{
@@ -634,4 +642,39 @@ section#NoiDung {
 }
 #Login4 {
     display:none;
+}
+#loadinglogin img{
+  position: fixed;
+  width:40%;
+  height:auto;
+  margin:0% 0% 0% 0%;
+  top:50px;
+}
+/*LienHe*/
+#Pglienhe {
+  padding:1%;
+  width:20%;
+  height:auto;
+  text-align:center;
+  border:1px solid white;
+  color:white;
+  border-radius:10px;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0.2, #ffffff),color-stop(0.5, #26b4d0));
+  float:left;
+}
+
+#Pglienhe .Pglienhe1{
+  border:1px solid white;
+  padding:2%;
+  background:#26b4d0;
+  border-radius:10px;
+}
+#Pglienhe3{
+  float:left;
+  width:70%;
+  height:200px;
+  margin:0% 0% 0% 4%;
+  padding:1%;
+  border:1px solid white;
+  text-align:center;
 }

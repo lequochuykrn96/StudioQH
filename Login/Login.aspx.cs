@@ -23,6 +23,7 @@ public partial class Login_Login : System.Web.UI.Page
         if (temp == 1)
         {
             Session["Ten"] = TBDN.Text;
+            System.Threading.Thread.Sleep(5000);
             Response.Redirect("~/TrangChu.aspx");
         }
         else if (TBDN.Text.Trim()!=null)
