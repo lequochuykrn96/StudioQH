@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Banner.ascx.cs" Inherits="Controls_Banner" %>
+<a href="https://vi.wikipedia.org/wiki/Khuy%E1%BA%BFn_m%C3%A3i" target="_blank"><img src="../Images/banner/bang-gia-khuyen-mai-tay-trang-rang-2.gif" /></a>

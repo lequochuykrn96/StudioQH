@@ -626,6 +626,11 @@ section#NoiDung {
   height:230px;
   margin:0% 0% 2% 0%;
   border:1px white solid;
+  overflow:hidden;
+}
+.Fmdangky img{
+  width:100%;
+  height:100%;
 }
 .Fmdangky1{
   color:white;

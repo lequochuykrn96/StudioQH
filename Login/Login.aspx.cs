@@ -15,6 +15,11 @@ public partial class Login_Login : System.Web.UI.Page
     }
     protected void bntdangnhap_Click(object sender, EventArgs e)
     {
+        if (string.IsNullOrEmpty(TBDN.Text.Trim()) || string.IsNullOrEmpty(TBDN.Text.Trim()))
+        {
+            Response.Write("<script>alert('Username/Password chưa đúng')</script>");
+            return;
+        }
         string check = "select count(*) from [Table] where Ten='" + TBDN.Text + "'and MatKhau='" + TBMK.Text + "'";
         SqlCommand com = new SqlCommand(check, con);
         con.Open();
@@ -26,7 +31,7 @@ public partial class Login_Login : System.Web.UI.Page
             System.Threading.Thread.Sleep(5000);
             Response.Redirect("~/TrangChu.aspx");
         }
-        else if (TBDN.Text.Trim()!=null)
+        else if (string.IsNullOrEmpty(TBDN.Text.Trim())||string.IsNullOrEmpty(TBDN.Text.Trim()))
         {
             Response.Write("<script>alert('Username/Password chưa đúng')</script>");
         }
