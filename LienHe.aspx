@@ -7,7 +7,7 @@
     <h1>Xin chào: <asp:Label ID="Pagelienhe" runat="server" Text="Label"></asp:Label></h1> </br> 
         <div class="Pglienhe1">
     <a>Để lại lời nhắn cho chúng tôi, chúng tôi sẽ liên hệ trực tiếp cho bạn nhé.</a> </br>
-    <asp:TextBox ID="TextBox1" runat="server" placeholder="Nội dung mà bạn muốn được tư vấn..." TextMode="MultiLine"></asp:TextBox> </br>
+    <asp:TextBox ID="TextBox1" runat="server" CssClass="Textloinhan" placeholder="Nội dung mà bạn muốn được tư vấn..." TextMode="MultiLine"></asp:TextBox> </br>
     <asp:Button ID="gui" runat="server" Text="Gửi" />
             </div>
     </div>

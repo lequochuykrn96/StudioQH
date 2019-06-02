@@ -4,7 +4,7 @@
     <siteMapNode url="~/TrangChu.aspx" title="Trang Chủ"  description="Đến Trang Chù" />
     <siteMapNode url="~/HinhAnh.aspx" title="Hình Ảnh"  description="Xem Hình Ảnh" >
     </siteMapNode>
-    <siteMapNode url="~/KhachHang.aspx" title="Khách Hàng"  description="Thông Tin Khách Hàng" >
+    <siteMapNode url="~/CamNang.aspx" title="Cẩm Nang"  description="Lời khuyên khi chụp" >
     </siteMapNode>
     <siteMapNode url="~/LienHe.aspx" title="Liên Hệ"  description="Liên Hệ" />
   </siteMapNode>
