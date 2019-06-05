@@ -373,46 +373,60 @@ section#NoiDung {
   -webkit-transform: scale(1.3); /* Safari 3-8 */
   transform: scale(1.3); 
 }
-/*KHACHHANG*/
-#KhachHang h1{
-  color:#000000;
-  text-align: left;
-  margin:1% 0% 0% 2%;
-  border:2px solid white;
+/*CamNang*/
+#CamNang {
+  width:100%;
+  height:auto;
   padding:1%;
-  width:10%;
-  border-radius: 0px 50px 50px 2px;
-  background:#37d4d4;
-}
-.TrinhBay{
-  margin: 2% 2% 2% 2%;
-  border: solid #fff 2px;
-  width:96%;
-  background:rgb(55, 212, 212);
-  text-align:left;
-}
-.TrinhBay ul{
-  list-style:none;
-  font-size:20px;
-  padding:1%;
-  width:90%;
-  margin:1% 5% 1% 5%;
-  background:#37d4d4;
-  border:solid 1px white;
-  border-radius: 50px 50px 50px 50px;
-}
-.TrinhBay p{
-  text-indent:20px;
-}
-
-.TrinhBay span{
+  color:white;
   text-align:center;
-  border:solid 1px white;
-  margin-left:18%;
-  background:#f7f7f778;
-  border-radius: 50px 50px 50px 50px;
-  font-weight:bold;
-  padding:5px;
+}
+#CamNang .tieude{
+  border-bottom:2px solid white;
+  width:90%;
+  display:inline-block;
+  font-size:30px;
+}
+#TrinhBay {
+  width:80%;
+  height:auto;
+  padding:1%;
+  display:inline-block;
+}
+#TrinhBay .trinhbay1 {
+  width:90%;
+  display:inline-table;
+  height:200px;
+  margin:1%;
+  padding:1%;
+  border-top:2px solid white;
+}
+#TrinhBay .trinhbay2 {
+  width:100%;
+  height:300px;
+  background:#00000038;
+}
+#TrinhBay .trinhbay3{
+  width:50%;
+  height:250px;
+  padding:1%;
+  float:right;
+  margin:1% 2% 0% 0%;
+  border-left:1px solid
+}
+#TrinhBay .trinhbay3 a{
+  color:white;
+}
+.trinhbayhinh{
+  width:40%;
+  height:250px;
+  float:left;
+  margin:2% 0% 0% 2%; 
+}
+.trinhbayhinh img{
+  width:100%;
+  height:auto;
+  border:1px solid white;
 }
 /*TrangChu*/
 .QuangCao{
@@ -626,6 +640,11 @@ section#NoiDung {
   height:230px;
   margin:0% 0% 2% 0%;
   border:1px white solid;
+  overflow:hidden;
+}
+.Fmdangky img{
+  width:100%;
+  height:100%;
 }
 .Fmdangky1{
   color:white;
@@ -662,7 +681,10 @@ section#NoiDung {
   background: -webkit-gradient(linear,left bottom,left top,color-stop(0.2, #ffffff),color-stop(0.5, #26b4d0));
   float:left;
 }
-
+#Pglienhe .Textloinhan {
+  width:210px;
+  height:100px;
+    }
 #Pglienhe .Pglienhe1{
   border:1px solid white;
   padding:2%;
@@ -678,6 +700,10 @@ section#NoiDung {
   border:1px solid white;
   text-align:center;
 }
+
+#Pglienhe3 h1{
+  color:white;
+}
 #maplienhe {
   width:880px;
   height:500px;
@@ -686,6 +712,63 @@ section#NoiDung {
 }
 .bandolienhe{
   height:500px;
-  width:880px;
-  
+  width:880px; 
+}
+/*Slide*/
+#loadingslide{
+  width:100%;
+  height:auto;
+  margin:0% 0% 1% 0%;
+}
+.slidehinh {
+  max-width: 100%;
+  height:550px;
+  position: relative;
+  overflow:hidden;
+  margin:auto;
+  margin-bottom:1%;
+  border-top:2px solid #6dffff;
+}
+.slidehinh1 {
+    display: none;
+}
+.slidehinh2 {
+  color: #f2f2f2;
+  font-size:30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  height:30px;
+  text-align: center;
+  background:#00000063;
+}
+.cham {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .cham:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }

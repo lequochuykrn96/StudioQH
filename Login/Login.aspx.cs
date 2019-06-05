@@ -26,9 +26,9 @@ public partial class Login_Login : System.Web.UI.Page
             System.Threading.Thread.Sleep(5000);
             Response.Redirect("~/TrangChu.aspx");
         }
-        else if (TBDN.Text.Trim()!=null)
+        else
         {
-            Response.Write("<script>alert('Username/Password chưa đúng')</script>");
+            TKsai.Visible = true;
         }
     }
     protected void bntdangky_Click(object sender, EventArgs e)
