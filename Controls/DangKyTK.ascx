@@ -1,32 +1,4 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="DangKyTK.ascx.cs" Inherits="Controls_DangKyTK" %>
-<%--<style type="text/css">
-    .auto-style1
-    {
-        width: 100%;
-    }
-    .auto-style3
-    {
-        width: 257px;
-    }
-    .auto-style4
-    {
-        width: 246px;
-    }
-    .auto-style5
-    {
-        width: 246px;
-        height: 26px;
-    }
-    .auto-style6
-    {
-        width: 257px;
-        height: 26px;
-    }
-    .auto-style7
-    {
-        height: 26px;
-    }
-</style>--%>
 <script src="../JS/DangKy.js"></script>
 <table class="auto-style1" runat="server" id="FormTable" >
     <tr>
@@ -99,7 +71,6 @@
         </td>
     </tr>
 </table>
-<asp:Label ID="HienThi" runat="server" Text="Hiển Thị" Visible="False"></asp:Label>
 
 <p>
     &nbsp;</p>

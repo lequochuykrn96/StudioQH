@@ -30,8 +30,10 @@
         <aside id="Login1">
             <div class="GomLG">
           <div class="FmDangnhap">
+              
               <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                   <ContentTemplate>
+                      
             <h3>ĐĂNG NHẬP</h3>
               <div runat="server" id="Login2">
                   <div class="dn1">
@@ -44,9 +46,10 @@
                    </div>       
                   <asp:Button ID="bntdangnhap" runat="server" Text="Đăng Nhập" OnClientClick="return confirm" CssClass="bntDangNhap" OnClick="bntdangnhap_Click" />  
                   </div>
-                      </ContentTemplate>
+                      <asp:Label ID="TKsai" runat="server" Text="Tài khoản hoặc Mật khẩu không đúng" Visible="False"></asp:Label>
+                  </ContentTemplate>
            </asp:UpdatePanel> 
-              <asp:UpdateProgress ID="loaddulieu" runat="server" AssociatedUpdatePanelID="UpdatePanel1">
+              <asp:UpdateProgress ID="loaddulieu" runat="server" >
                     <ProgressTemplate>
                     <div id="loadinglogin" runat="server">
                         <img src="../Images/loading/full.gif" />
