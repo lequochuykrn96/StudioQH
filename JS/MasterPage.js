@@ -1,10 +1,10 @@
 ﻿//Hiển Thị Theme
 function anchon() {
     var x = document.getElementById("GiaoDien");
-    if (x.style.height === "200px") {
+    if (x.style.height === "220px") {
         x.style.height = "0px";;
     } else {
-        x.style.height = "200px";
+        x.style.height = "220px";
     }
 }
 //Đăng Nhập

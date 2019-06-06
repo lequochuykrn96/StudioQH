@@ -22,7 +22,7 @@ public partial class Controls_DangKyTK : System.Web.UI.UserControl
             con.Close();
             if (temp > 0)
             {
-                Response.Write("<script>alert('Trùng Dữ Liệu')</script>");
+                Response.Write("<script>alert('Tài khoản này đã có')</script>");
             }
             else
             {
