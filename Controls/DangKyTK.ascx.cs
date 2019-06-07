@@ -15,7 +15,7 @@ public partial class Controls_DangKyTK : System.Web.UI.UserControl
     SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\DataDangKy.mdf;Integrated Security=True");
     protected void bntDK_Click(object sender, EventArgs e)
     {
-            string sql = "Select Count(*) from [Table] where Ten ='" + Name.Text + "'";
+            string sql = "Select Count(*) from [KhachHang] where Ten ='" + Name.Text + "'";
             SqlCommand x = new SqlCommand(sql, con);
             con.Open();
             int temp = Convert.ToInt32(x.ExecuteScalar().ToString());
@@ -26,7 +26,7 @@ public partial class Controls_DangKyTK : System.Web.UI.UserControl
             }
             else
             {
-                string ins = "Insert into [Table](Ten,Gmail,SDT,MatKhau)values('" + Name.Text + "','" + EmailAddress.Text + "','" + PhoneHome.Text + "','" + Matkhau.Text + "')";
+                string ins = "Insert into [KhachHang](Ten,Gmail,SDT,MatKhau)values('" + Name.Text + "','" + EmailAddress.Text + "','" + PhoneHome.Text + "','" + Matkhau.Text + "')";
                 SqlCommand com = new SqlCommand(ins, con);
                 con.Open();
                 com.ExecuteNonQuery();

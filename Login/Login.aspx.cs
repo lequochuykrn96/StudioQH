@@ -15,7 +15,7 @@ public partial class Login_Login : System.Web.UI.Page
     }
     protected void bntdangnhap_Click(object sender, EventArgs e)
     {
-        string check = "select count(*) from [Table] where Ten='" + TBDN.Text + "'and MatKhau='" + TBMK.Text + "'";
+        string check = "select count(*) from [KhachHang] where Ten='" + TBDN.Text + "'and MatKhau='" + TBMK.Text + "'";
         SqlCommand com = new SqlCommand(check, con);
         con.Open();
         int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
