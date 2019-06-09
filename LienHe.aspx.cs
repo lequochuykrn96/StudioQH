@@ -25,7 +25,11 @@ public partial class _Default : BasePage
 
     protected void gui_Click(object sender, EventArgs e)
     {
-
+        if (LoiNhan.Text.Trim().Length == 0)
+        {
+            Response.Write("<script>alert('Bạn chưa để lại lời nhắn')</script>");
+            return;
+        }
         string ins = "Insert into [LoiNhan](Ten,Coment)values('" + Pagelienhe.Text + "','" + LoiNhan.Text + "')";
         SqlCommand com = new SqlCommand(ins, con);
         con.Open();
