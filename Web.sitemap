@@ -6,6 +6,7 @@
     </siteMapNode>
     <siteMapNode url="~/CamNang.aspx" title="Cẩm Nang"  description="Lời khuyên khi chụp" >
     </siteMapNode>
-    <siteMapNode url="~/LienHe.aspx" title="Liên Hệ"  description="Liên Hệ" />
+    <siteMapNode url="~/LienHe.aspx" title="Liên Hệ"  description="Liên Hệ" >
+    </siteMapNode>
   </siteMapNode>
 </siteMap>

@@ -482,44 +482,6 @@ section#NoiDung {
   margin:0% 0% 0% 0%;
 
 }
-/*Đăng Ký*/
-/*.DKy{
-  text-align:center;
-}
-.DKy h1{
-  color:white;
-}
-.ErrorMessage { color: Red; }
-.auto-style1{
-
-  border:solid white;
-  background:#59ddd4;
-  text-align:left;
-  width:45%;
-  height:auto;
-  font-size:20px;
-  padding:2%;
-  margin:0% 0% 0% 30%;
-}
-.auto-style3
-    {
-        width:20%;
-    }
-    .auto-style4
-    {
-        width: 40%;
-    }
-    .auto-style7{
-      width:5%;
-    }
-.CLbntDK
-{
-    color:white;
-    background:rgba(0, 214, 224, 0.6);
-    padding:2%;
-    font-weight:bolder;
-    margin:5% 0% 0% 20%;
-}*/
 /*My Bar*/
 .MyBar {
   display: inline-block;
@@ -547,4 +509,6 @@ section#NoiDung {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+
+
 

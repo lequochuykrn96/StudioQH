@@ -123,7 +123,7 @@
             if (chayhinh > filehinh.length - 1) {
                 chayhinh = 0
             }
-            setTimeout(showhinh, 10000);
+            setTimeout(showhinh, 8000);
         }
         showhinh(chayhinh = 0);
         function chamSlide(n) {

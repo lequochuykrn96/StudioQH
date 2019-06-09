@@ -25,6 +25,7 @@ public partial class _Default : BasePage
 
     protected void gui_Click(object sender, EventArgs e)
     {
+
         string ins = "Insert into [LoiNhan](Ten,Coment)values('" + Pagelienhe.Text + "','" + LoiNhan.Text + "')";
         SqlCommand com = new SqlCommand(ins, con);
         con.Open();
@@ -32,7 +33,9 @@ public partial class _Default : BasePage
         con.Close();
         if (Page.IsValid)
         {
-            Response.Write("<script>alert('Cảm ơn bạn đã gửi, chúng tôi sẽ liên lạc sớm nhất')</script>");
+            Hloinhan.Visible = true;
+            Hienthiloinhan.Text = Pagelienhe.Text;
+            Hienloinhan.Text = LoiNhan.Text;
         }
     }
 }
