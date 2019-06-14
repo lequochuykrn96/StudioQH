@@ -29,6 +29,7 @@
 
 <img src="ImgGioiThieu/T6.png" alt="drawing" /> 
 <img src="ImgGioiThieu/T6.1.png" alt="drawing" /> 
+<img src="ImgGioiThieu/T6.2.png" alt="drawing" /> 
 
 # Thay đổi giao diện
 *Bạn có thể chọn Night "Giao diện ban đêm" thay cho giao diện gốc thì giao diện Night sẽ tối màu hơn và thanh Menu rút gọn hơn có thể bạn sẽ thích :)*
