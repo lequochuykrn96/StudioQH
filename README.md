@@ -1,4 +1,4 @@
-# Web Quốc Huy-Studio 
+# Web Quốc Huy-Studio ASP.NET 
   *Bạn có thể tham khảo được các hình chụp của khách hàng chụp trước đó xem cách họ chụp có theo sở thích của bạn hay không và nếu bạn ưng ý thì có thể liên hệ trực tiếp với QH-Studio ngay trên trang web cùng với tài khoản riêng của bạn.*
 
 <img src="ImgGioiThieu/T1.png" alt="drawing" width="100%" />
@@ -35,3 +35,23 @@
 *Bạn có thể chọn Night "Giao diện ban đêm" thay cho giao diện gốc thì giao diện Night sẽ tối màu hơn và thanh Menu rút gọn hơn có thể bạn sẽ thích :)*
 <img src="ImgGioiThieu/G3.PNG" alt="drawing" /> 
 <img src="ImgGioiThieu/G2.png" alt="drawing" /> 
+
+# Giao diện và nội dung bên trong (Theme Night)
+# 1. Trang Chủ:(Theme Night)
+
+<img src="ImgGioiThieu/G4.png" alt="drawing"/>
+
+# 2. Hình Ảnh: (Theme Night)
+
+<img src="ImgGioiThieu/G5.png" alt="drawing" />
+<img src="ImgGioiThieu/G5_2.png" alt="drawing" />
+
+# 3. Cẩm Nang : (Theme Night)
+
+<img src="ImgGioiThieu/G6.png" alt="drawing"/> 
+
+# 4. Liên Hệ : (Theme Night)
+
+<img src="ImgGioiThieu/G6_2.png" alt="drawing" /> 
+
+
